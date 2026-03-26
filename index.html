@@ -2,230 +2,421 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renan Alves - Portfolio</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Renan Alves — Backend Developer specializing in FastAPI, Python, REST APIs, automation, and scalable system architecture.">
+  <meta name="keywords"
+    content="backend developer, FastAPI, Python, REST API, Django, MySQL, PostgreSQL, automation, Docker, Linux">
+  <meta name="author" content="Renan Alves">
+  <meta property="og:title" content="Renan Alves — Backend Developer">
+  <meta property="og:description"
+    content="Backend Developer focused on APIs, automation, and scalable system architecture.">
+  <meta property="og:type" content="website">
+  <title>Renan Alves — Backend Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.85em' font-size='90' font-family='monospace' font-weight='bold' fill='%23A12EDC'>&#123;&#125;</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-    <header class="principal-header">
-        <section class='principal-section' id='home'>
-            <div class="menu-mobile" onclick="toggleMenu()">⋮</div>
+  <!-- ═══════════════════════════════════════
+       NAV
+  ═══════════════════════════════════════ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__logo grad-text">Renan Alves</a>
 
-            <div class="name-header bar">
-                <h1 id="renan">Renan</h1>
+      <ul class="nav__links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <button class="nav__burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="nav__drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <a href="#about" class="drawer-link" data-drawer-link>About</a>
+    <a href="#projects" class="drawer-link" data-drawer-link>Projects</a>
+    <a href="#contact" class="drawer-link" data-drawer-link>Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════ -->
+  <section class="hero" id="home" aria-label="Introduction">
+    <div class="container hero__content">
+      <p class="hero__eyebrow">Backend Developer</p>
+
+      <h1 class="hero__name grad-text">Renan Alves</h1>
+
+      <p class="hero__tagline">The force behind what you see.</p>
+
+      <p class="hero__desc">
+        Discreet in execution, rigorous in architecture. I turn logic into reliable
+        systems, where every decision has a purpose. Nothing is excessive. Nothing is missing.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact" class="btn btn--ghost">Get in Touch</a>
+      </div>
+
+      <div class="hero__social">
+        <a href="https://github.com/Renanntj" target="_blank" rel="noopener" class="hero__social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/renanalves433/" target="_blank" rel="noopener"
+          class="hero__social-link">LinkedIn</a>
+        <a href="https://www.instagram.com/r.alvess6/" target="_blank" rel="noopener"
+          class="hero__social-link">Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ═══════════════════════════════════════
+       ABOUT
+  ═══════════════════════════════════════ -->
+  <section class="about section" id="about" aria-label="About me">
+    <div class="container">
+      <span class="section__eyebrow">01 — About</span>
+      <h2 class="section__title">Hello, I'm Renan.</h2>
+
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I work as a <strong>Backend Developer</strong> focused on software architecture,
+            data modeling, and building consistent systems. I avoid rushed solutions — every
+            decision is made to reduce complexity, ensure stability, and simplify long-term
+            maintenance.
+          </p>
+          <p>
+            I deal with logic, business rules, and data flow — transforming ideas into clear,
+            predictable, and scalable structures. My code prioritizes <strong>readability,
+              well-defined responsibilities, and deterministic behavior.</strong>
+          </p>
+          <p>
+            My goal is to build solid systems where performance, security, and technical
+            clarity coexist — and where every line of code exists for a reason.
+          </p>
+
+          <div class="about__stack">
+            <p class="about__stack-label">Primary Stack</p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">MySQL</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Linux</span>
+              <span class="tag">Shell Script</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">AI Developer</span>
+              <span class="tag">HTML / CSS / JS</span>
             </div>
-            <div class="bar">
-                <a href="#home" class="link-header">Home</a>
-                <a href="#sobre" class="link-header">About</a>
-                <a href="#projetos" class="link-header">Projects</a>
-                <a href="#contato" class="link-header">Contact</a>
-            </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="principal-content-header">
-            <div class="bigname-header">
-                <h1>Renan</h1>
-            </div>
-            <div class="content-header">
-                <div class="header-ap">
-                    <h2>The force behind what you see.</h2>
-                    <p>
-                        Backend Developer — discreet in execution, rigorous in architecture.
-                        I turn logic into reliable systems, where every decision has a purpose.
-                        Nothing is excessive. Nothing is missing.
-                    </p>
-                </div>
-            </div>
-            <div class="link-header-content">
-                <a href="https://www.linkedin.com/in/renanalves433/">LinkedIn</a>
-                <a href="https://github.com/Renanntj">GitHub</a>
-            </div>
-        </section>
-    </header>
+        <div class="about__image-wrap reveal">
+          <img src="img/me.jpeg" alt="Renan Alves" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <nav class="mobile-nav" id="mobileNav">
-        <a href="#sobre">About</a>
-        <a href="#habilidades">Skills</a>
-        <a href="#projetos">Projects</a>
-        <a href="#contato">Contact</a>
-    </nav>
+  <div class="divider"></div>
 
-    <main class="principal-main">
-        <section class="sobremim-content" id='sobre'>
-            <div class="imagem-sobremim">
-                <img src="img/me.jpeg" alt="Me">
-            </div>
-            <div class="sobremim-content-main">
-                <div class="sobremim-side">
-                    <h1>Get to Know Me</h1>
-                    <p>
-                        Simple solutions, precise decisions.
-                        Every detail exists to support the system.
-                    </p>
-                </div>
-                <div class="sobremim-look">
-                    <h3>Hello, I'm Renan!</h3>
-                    <p>
-                        I work as a Backend Developer, focused on software architecture, data modeling,
-                        and building consistent systems. I avoid rushed solutions — every decision is made
-                        to reduce complexity, ensure stability, and simplify long-term maintenance.
-                        <br><br>
-                        I deal with logic, business rules, and data flow, transforming ideas into clear,
-                        predictable, and scalable structures. My code prioritizes readability,
-                        well-defined responsibilities, and deterministic behavior.
-                        <br><br>
-                        My goal as a backend developer is to build solid systems where performance,
-                        security, and technical clarity coexist — and where every line of code exists
-                        for a reason. Nothing is excessive. Nothing is missing.
-                    </p>
-                </div>
-            </div>
-        </section>
+  <!-- ═══════════════════════════════════════
+       PROJECTS
+       Each card is a mini case study — problem, highlights, stack, link.
+  ═══════════════════════════════════════ -->
+  <section class="projects section" id="projects" aria-label="Projects">
+    <div class="container">
+      <span class="section__eyebrow">02 — Projects</span>
+      <h2 class="section__title">Featured Projects</h2>
+      <p class="section__sub">
+        Ideas transformed into clear and intentional experiences — each with a defined
+        problem, deliberate tech choices, and real decisions behind it.
+      </p>
 
-        <section class="find-me" id="habilidades">
-            <div class="find-me-content">
-                <div class="find-me-content-text">
-                    <h1>My Skills</h1>
-                    <p>Everything I use to turn ideas into something real.</p>
-                </div>
+      <div class="projects__grid reveal-group">
 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                            alt="Python">
-                        <span>Python</span>
-                    </div>
+        <article class="project-card reveal">
+          <span class="project-card__num">01</span>
+          <h3 class="project-card__name">Delivery API</h3>
+          <p class="project-card__desc">
+            REST API for order and user management in a delivery context. Covers the full
+            lifecycle — registration, order placement, status tracking, and secure auth.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>JWT authentication with token refresh</li>
+              <li>SQLAlchemy ORM with relational schema</li>
+              <li>Role-based access control</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">SQLAlchemy</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Python</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/delivery_api" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
-                            alt="Shell Script">
-                        <span>Shell Script</span>
-                    </div>
+        <article class="project-card reveal">
+          <span class="project-card__num">02</span>
+          <h3 class="project-card__name">Authentication API</h3>
+          <p class="project-card__desc">
+            Standalone auth microservice built to plug into any backend. Manages the user
+            lifecycle independently — registration, login, and secure password handling.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>bcrypt hashing via passlib</li>
+              <li>Full CRUD user management</li>
+              <li>Designed for microservice composition</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Passlib</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Python</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/API_AUTH_SERVICE" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                        <span>Git</span>
-                    </div>
+        <article class="project-card reveal">
+          <span class="project-card__num">03</span>
+          <h3 class="project-card__name">Music Recommendation API</h3>
+          <p class="project-card__desc">
+            REST API that returns music recommendations based on user-selected genres.
+            Actively developed — architecture supports evolving recommendation logic
+            without requiring structural rework.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>Genre-based filtering engine</li>
+              <li>Extensible recommendation interface</li>
+              <li>Under active development</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">FastAPI</span>
+            <span class="tag">Python</span>
+            <span class="tag">REST</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/api_musica" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                            alt="MySQL">
-                        <span>MySQL</span>
-                    </div>
+        <article class="project-card reveal">
+          <span class="project-card__num">04</span>
+          <h3 class="project-card__name">AI Agent</h3>
+          <p class="project-card__desc">
+            Autonomous decision-making agent built to explore AI-driven interaction
+            patterns. Focused on intelligent automation and multi-step task execution
+            without constant human input.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>Autonomous task execution flow</li>
+              <li>Context-aware decision logic</li>
+              <li>Structured prompt engineering</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">Python</span>
+            <span class="tag">AI</span>
+            <span class="tag">Automation</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/Agente-de-IA" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-                            alt="HTML">
-                        <span>HTML</span>
-                    </div>
+        <article class="project-card reveal">
+          <span class="project-card__num">05</span>
+          <h3 class="project-card__name">Phishing Detector</h3>
+          <p class="project-card__desc">
+            Tool for identifying phishing attempts through URL and content pattern
+            analysis. Security-first design — fast, deterministic output with no
+            ambiguous states.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>URL and content pattern analysis</li>
+              <li>Heuristic-based detection engine</li>
+              <li>Clear positive / negative output</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">Python</span>
+            <span class="tag">Security</span>
+            <span class="tag">Pattern Analysis</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/Detector-de-Phishing" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                    <div class="skill-card">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-                        <span>CSS</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <article class="project-card reveal">
+          <span class="project-card__num">06</span>
+          <h3 class="project-card__name">PulseAPI</h3>
+          <p class="project-card__desc">
+            High-performance RESTful API designed for real-time monitoring and data processing. Built with a focus on
+            scalability, low-latency responses, and robust error handling.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>Real-time data processing</li>
+              <li>Scalable RESTful architecture</li>
+              <li>Low-latency response times</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">Node.js</span> <span class="tag">API</span>
+            <span class="tag">Backend</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/PulseAPI" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-        <section class="projects-section" id="projetos">
-            <div class="projects-container">
-                <header class="projects-header">
-                    <h1>Featured Projects</h1>
-                    <p>Ideas transformed into clear and intentional experiences.</p>
-                </header>
+        <article class="project-card reveal">
+          <span class="project-card__num">07</span>
+          <h3 class="project-card__name">Orion-IA</h3>
+          <p class="project-card__desc">
+            Artificial Intelligence system tailored for automated data analysis and predictive modeling. Features a
+            modular design for seamless integration into existing backend environments.
+          </p>
+          <div class="project-card__highlights">
+            <ul>
+              <li>Predictive modeling and analysis</li>
+              <li>Modular AI architecture</li>
+              <li>Seamless backend integration</li>
+            </ul>
+          </div>
+          <div class="project-card__tech tags">
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+            <span class="tag">AI</span>
+          </div>
+          <div class="project-card__actions">
+            <a href="https://github.com/Renanntj/Orion-IA" target="_blank" rel="noopener"
+              class="btn--outline-accent">View on GitHub →</a>
+          </div>
+        </article>
 
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Delivery API (FastAPI)</h3>
-                        <p>
-                            REST API for order and user management, built with FastAPI,
-                            SQLAlchemy, and JWT authentication.
-                        </p>
-                        <a href="https://github.com/Renanntj/delivery_api" target="_blank" rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
+      </div>
+    </div>
+  </section>
 
-                    <article class="project-card">
-                        <h3>Authentication API (Auth Service)</h3>
-                        <p>
-                            Robust REST API developed with FastAPI for user management.
-                            Implements JWT authentication, password hashing with passlib,
-                            and full CRUD operations, focusing on security and scalability.
-                        </p>
-                        <a href="https://github.com/Renanntj/API_AUTH_SERVICE" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
 
-                    <article class="project-card">
-                        <h3>Music Recommendation API</h3>
-                        <p>
-                            REST API built with FastAPI to recommend music based on the
-                            genre selected by the user. The project is still under development
-                            and constantly evolving.
-                        </p>
-                        <a href="https://github.com/Renanntj/api_musica" target="_blank" rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
 
-                    <article class="project-card">
-                        <h3>AI Agent</h3>
-                        <p>
-                            Project focused on automation and artificial intelligence,
-                            exploring decision-making and intelligent interaction.
-                        </p>
-                        <a href="https://github.com/Renanntj/Agente-de-IA" target="_blank" rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
+  <div class="divider"></div>
 
-                    <article class="project-card">
-                        <h3>Phishing Detector</h3>
-                        <p>
-                            Application for identifying phishing attempts by analyzing
-                            suspicious patterns in links and content.
-                        </p>
-                        <a href="https://github.com/Renanntj/Detector-de-Phishing" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
+  <!-- ═══════════════════════════════════════
+       CONTACT
+  ═══════════════════════════════════════ -->
+  <section class="contact section" id="contact" aria-label="Contact">
+    <div class="container">
+      <span class="section__eyebrow">04 — Contact</span>
+      <h2 class="section__title">Get in Touch</h2>
 
-                    <article class="project-card">
-                        <h3>QR Code Generator</h3>
-                        <p>
-                            Simple and efficient tool for generating customized QR Codes quickly.
-                        </p>
-                        <a href="https://github.com/Renanntj/Gerador-de-QRcode" target="_blank"
-                            rel="noopener noreferrer">
-                            View on GitHub →
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
+      <div class="contact__layout">
+        <div class="contact__info reveal">
+          <p>
+            Whether you have a project in mind, a backend problem to solve, or just want
+            to connect — I'm direct and easy to reach.
+          </p>
+          <div class="contact__info-links">
+            <a href="mailto:renannalves334@gmail.com" class="contact__info-link">renannalves334@gmail.com</a>
+            <a href="https://github.com/Renanntj" target="_blank" rel="noopener" class="contact__info-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/renanalves433/" target="_blank" rel="noopener"
+              class="contact__info-link">LinkedIn</a>
+          </div>
+        </div>
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="fname">Name</label>
+            <input class="form__input" type="text" id="fname" name="name" placeholder="Your name" autocomplete="name">
+            <span class="form__error" id="nameError">Name is required.</span>
+          </div>
 
-    <footer class="principal footer">
-        <section class="contato-content" id='contato'>
-            <div class="link-contato">
-                <a href="https://www.instagram.com/r.alvess6/" class="contato-here">Instagram</a>
-                <a href="https://www.linkedin.com/in/renanalves433/" class="contato-here">LinkedIn</a>
-                <a href="https://github.com/Renanntj" class="contato-here">GitHub</a>
-            </div>
-            <div class="credits">
-                <p>Developed by <a href="">Renan</a></p>
-            </div>
-        </section>
-    </footer>
+          <div class="form__group">
+            <label class="form__label" for="femail">Email</label>
+            <input class="form__input" type="email" id="femail" name="email" placeholder="your@email.com"
+              autocomplete="email">
+            <span class="form__error" id="emailError">A valid email is required.</span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="fmessage">Message</label>
+            <textarea class="form__textarea" id="fmessage" name="message"
+              placeholder="Tell me about the project or opportunity..."></textarea>
+            <span class="form__error" id="messageError">Message cannot be empty.</span>
+          </div>
+
+          <div class="form__feedback" id="formFeedback" aria-live="polite"></div>
+
+          <button type="submit" class="btn btn--primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo grad-text">Renan Alves</p>
+
+      <nav aria-label="Footer links">
+        <ul class="footer__links" role="list">
+          <li><a href="https://github.com/Renanntj" target="_blank" rel="noopener" class="footer__link">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/renanalves433/" target="_blank" rel="noopener"
+              class="footer__link">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/r.alvess6/" target="_blank" rel="noopener"
+              class="footer__link">Instagram</a></li>
+        </ul>
+      </nav>
+
+      <p class="footer__copy">
+        &copy; <span id="year"></span> Renan Alves. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
 
 </body>
 
